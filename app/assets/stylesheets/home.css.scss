@@ -1,3 +1,44 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.content {
+  font-size: 0.8em;
+  line-height: 1.8;
+  margin: 15px auto;
+  font-weight: 900;
+}
+
+#logo-img {
+  background-image: image-url('logo.png');
+  background-size: 167px 30px;
+  height: 30px;
+  width: 167px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+  margin-left: 15px;
+}
+
+#chengbi-img {
+  background-image: image-url('chengbi.png');
+  background-size: 42px 17px;
+  height: 17px;
+  width: 42px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#anna-1-img {
+  background-image: image-url('anna-1.png');
+  background-size: 320px 212px;
+  height: 212px;
+  width: 320px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+}
