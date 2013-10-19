@@ -9,6 +9,118 @@ div.content {
   font-weight: bold;
 }
 
+ul.menu {
+  list-style: none outside none;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+
+ul.menu > li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+ul.menu li.divider {
+  height: 15px;
+  width: 0px;
+  border-left: #000 solid 2px;
+  margin: 15px 13px;
+}
+
+ul.menu > li > a {
+  display: block;
+  position: relative;
+  margin: 15px auto;
+}
+
+ul.menu > li > div {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+#song-en-menu {
+  background-image: image-url('song-en-menu.png');
+  background-size: 26px 6px;
+  height: 6px;
+  width: 26px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+#song-chs-menu {
+  background-image: image-url('song-chs-menu.png');
+  background-size: 15px 15px;
+  height: 15px;
+  width: 15px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+#poem-en-menu {
+  background-image: image-url('poem-en-menu.png');
+  background-size: 70px 6px;
+  height: 6px;
+  width: 70px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+#poem-chs-menu {
+  background-image: image-url('poem-chs-menu.png');
+  background-size: 60px 14px;
+  height: 14px;
+  width: 60px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+#photo-en-menu {
+  background-image: image-url('photo-en-menu.png');
+  background-size: 32px 6px;
+  height: 6px;
+  width: 32px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+#photo-chs-menu {
+  background-image: image-url('photo-chs-menu.png');
+  background-size: 30px 14px;
+  height: 14px;
+  width: 30px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+#design-en-menu {
+  background-image: image-url('design-en-menu.png');
+  background-size: 36px 6px;
+  height: 6px;
+  width: 36px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+#design-chs-menu {
+  background-image: image-url('design-chs-menu.png');
+  background-size: 30px 14px;
+  height: 14px;
+  width: 30px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+
 #logo-img {
   background-image: image-url('logo.png');
   background-size: 167px 30px;
@@ -29,6 +141,19 @@ div.content {
   background-repeat: no-repeat;
   display: block;
   margin-right: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#profile-img {
+  background-image: image-url('profile.png');
+  background-size: 40px 12px;
+  height: 12px;
+  width: 40px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+  margin-left: 15px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
