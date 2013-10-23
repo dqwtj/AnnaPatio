@@ -1,0 +1,10 @@
+<div class="container">
+<%= render "home/menu"%>
+<div class="row"><div class="poem-index-img"></div></div>
+<ul class="poem-index-title">
+	<% @poems.each do |poem| %>
+	<li><%= poem.title %></li>
+	<% end %>
+</ul>
+<%= will_paginate @poems %>
+</div>

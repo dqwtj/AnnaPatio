@@ -1,0 +1,26 @@
+<div class="container">
+<%= render "home/menu"%>
+<div class="row">
+	<div class="pull-right"><%= link_to "返回目录", poems_path, :class => "return-to-index"%></div>
+</div>
+<div class="row">
+	<div class="poem-content col-xs-12">
+		<h4 class="poem-title"><%= @poem.title %></h4>
+		<span class="poem-body"><%= simple_format @poem.body %></span>
+	</div>
+</div>
+<div class="row">
+	<% if @poemLeft %>
+	<div class="prev-poem">
+	<%= link_to "上一篇", poems_path, :class => "prev-poem-link"%>
+	<%= link_to @poemLeft.title, poem_path(@poemLeft), :class => "prev-poem-title"%>
+	</div>
+	<% end %>
+	<% if @poemRight %>
+	<div class="pull-right next-poem">
+	<%= link_to "下一篇", poem_path(@poemRight), :class => "next-poem-link"%>
+	<%= link_to @poemRight.title, poem_path(@poemRight), :class => "next-poem-title"%>
+	</div>
+	<% end %>
+</div>
+</div>

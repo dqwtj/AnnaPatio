@@ -4,6 +4,12 @@ source 'http://ruby.taobao.org'
 gem 'rails', '4.0.0'
 
 gem "mongoid", github: 'mongoid/mongoid', ref: '11e45e5a30a45458b83db99ab6c9d9ccc337e66f'
+gem 'mongoid_auto_increment_id', "0.6.2"
+
+# 分页
+gem 'will_paginate', '3.0.4'
+
+gem 'simple_form', "3.0.0"
 
 
 # Use SCSS for stylesheets
@@ -11,6 +17,7 @@ gem 'sass-rails', '~> 4.0.0'
 
 gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :github => 'anjlab/bootstrap-rails'
+gem 'bootstrap-will_paginate', '0.0.10'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

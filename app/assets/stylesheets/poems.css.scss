@@ -1,0 +1,100 @@
+fieldset.edit-form {
+  margin: 15px 15px;
+}
+
+a.return-to-index {
+  background-image: image-url('return-to-index.png');
+  background-size: 62.5px 11.5px;
+  height: 11.5px;
+  width: 62.5px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+  overflow: hidden;
+  text-align: left;
+  text-indent: -119988px;
+  margin-right: 15px;
+}
+
+div.poem-index-img {
+  background-image: image-url('poem-index.png');
+  background-size: 51px 14px;
+  height: 14px;
+  width: 51px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 15px auto;
+}
+
+ul.poem-index-title {
+  list-style: none outside none;
+  text-align: center;
+  padding: 0 0;
+  line-height: 2.5;
+  font-weight: bold;
+  margin: 20px auto;
+}
+
+div.poem-content {
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  line-height: 1.78;
+  padding: 0 48px;
+}
+
+div.poem-content span.poem-body > p {
+  text-indent: 1em;
+  text-align: justify;
+}
+
+h4.poem-title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+div.next-poem {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+div.pagination {
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+}
+
+ul.pagination {
+  border: none;
+}
+
+ul.pagination > li > a {
+  border: none;
+  color: #999;
+  background-color: #f2f1f1;
+  padding: 6px;
+}
+
+ul.pagination > li.active > a {
+  color: #000;
+  background-color: #f2f1f1;
+}
+
+ul.pagination > li.prev > a {
+  margin-right: 20px;
+}
+
+ul.pagination > li.next > a {
+  margin-left: 20px;
+}
+
+ul.pagination > li.disabled > a {
+  background-color: #f2f1f1;
+}
+
+ul.pagination > li.disabled > a:hover {
+  background-color: #f2f1f1;
+}

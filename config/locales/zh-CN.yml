@@ -1,0 +1,14 @@
+"zh-CN":
+  mongoid:
+    models:
+      poem: 诗
+    attributes:
+      poem:
+        title: 标题
+        body: 正文
+    errors:
+      messages:
+        blank: "不能为空"
+      
+
+
