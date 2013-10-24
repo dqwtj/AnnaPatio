@@ -39,26 +39,46 @@ ul.poem-index-title {
 div.poem-content {
   font-weight: bold;
   margin-top: 25px;
-  margin-bottom: 40px;
-  line-height: 1.78;
-  padding: 0 48px;
+  margin-bottom: 60px;
+  line-height: 1.75;
+  padding: 0 65px;
+  font-size: 15px;
 }
 
-div.poem-content span.poem-body > p {
+div.poem-content.essay {
+  padding: 0 30px;
+}
+
+div.poem-content.essay span.poem-body > p {
   text-indent: 1em;
   text-align: justify;
 }
 
 h4.poem-title {
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 30px;
+}
+
+div.prev-poem {
+  margin-left: 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+div.prev-poem > a {
+  color: #000;
 }
 
 div.next-poem {
   margin-right: 15px;
   margin-bottom: 15px;
+  display: inline-block;
+}
+
+div.next-poem > a {
+  color: #000;
 }
 
 div.pagination {

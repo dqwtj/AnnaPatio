@@ -4,7 +4,7 @@
 	<div class="pull-right"><%= link_to "返回目录", poems_path, :class => "return-to-index"%></div>
 </div>
 <div class="row">
-	<div class="poem-content col-xs-12">
+	<div class="poem-content col-xs-12 <%= "essay" if !@poem.is_poem %> ">
 		<h4 class="poem-title"><%= @poem.title %></h4>
 		<span class="poem-body"><%= simple_format @poem.body %></span>
 	</div>

@@ -39,7 +39,7 @@ class PoemsController < ApplicationController
   end
   
   def poem_params
-    params.require(:poem).permit(:title, :body, :written_at)
+    params.require(:poem).permit(:title, :body, :is_poem)
   end
   
 end
