@@ -36,6 +36,12 @@ ul.poem-index-title {
   margin: 20px auto;
 }
 
+ul.poem-index-title > li > a {
+  color: #000;
+  font-weight: bold;
+  font-size: 15px;
+}
+
 div.poem-content {
   font-weight: bold;
   margin-top: 25px;
