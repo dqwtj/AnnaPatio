@@ -5,7 +5,7 @@
 	<div class="gallery-item">
 	<div class="gallery-text">
 	<h5><%= gallery.title %></h5>
-	<%= gallery.body %>
+	<%= simple_format gallery.body %>
 	</div>
 	<% gallery.photos.each do |photo| %>
 	<img src="<%= photo.mobile %>" class = "img-responsive gallery-photo" >
