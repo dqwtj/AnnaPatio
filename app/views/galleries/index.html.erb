@@ -1,0 +1,17 @@
+<div class="container">
+<%= render "home/menu"%>
+<div class="gallery-index-panel">
+	<% @galleries.each do |gallery| %>
+	<div class="gallery-item">
+	<div class="gallery-text">
+	<h5><%= gallery.title %></h5>
+	<%= gallery.body %>
+	</div>
+	<% gallery.photos.each do |photo| %>
+	<img src="<%= photo.mobile %>" class = "img-responsive gallery-photo" >
+	<% end %>
+	</div>
+	<% end %>
+</div>
+<%= will_paginate @poems %>
+</div>

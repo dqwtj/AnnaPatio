@@ -12,6 +12,9 @@ AnnaPatio::Application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   resources :poems
+  resources :galleries do
+    resources :photos
+  end
 
   # Example resource route with options:
   #   resources :products do

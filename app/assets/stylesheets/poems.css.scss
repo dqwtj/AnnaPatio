@@ -124,3 +124,8 @@ ul.pagination > li.disabled > a {
 ul.pagination > li.disabled > a:hover {
   background-color: #f2f1f1;
 }
+
+ul.pagination > li.active > a:hover {
+  background-color: #f2f1f1;
+  color: #000;
+}

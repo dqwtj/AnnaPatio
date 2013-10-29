@@ -6,6 +6,10 @@
       poem:
         title: 标题
         body: 正文
+      gallery:
+        title: 标题
+        is_design: 这是设计？
+        body: 正文
     errors:
       messages:
         blank: "不能为空"

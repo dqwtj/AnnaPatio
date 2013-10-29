@@ -1,0 +1,11 @@
+<fieldset class="edit-form">
+<%= form_tag 'http://v0.api.upyun.com/annapatio-photo/', :class => "form-inline", :enctype => "multipart/form-data", :id => 'upyun-form' do %>
+  <%= hidden_field_tag :policy, @policy %>
+  <%= hidden_field_tag :signature, @signature %>
+  <div class="form-group">
+  <%= file_field_tag :file %>
+  </div>
+  <%= submit_tag '点击上传照片', :class => "btn btn-default" %>
+<% end %>
+</fieldset>
+<%= render 'form' %>
