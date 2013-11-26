@@ -1,0 +1,22 @@
+<%= simple_form_for([@album]) do |f| %>
+<fieldset class="edit-form">
+  <%= f.error_notification %>
+  <%= f.input :name %>
+  <%= f.input :info, :as => :text, :input_html => { :rows => "8" } %>
+  <div class="row">
+  <% @album.songs.each do |song| %>
+  <div class="col-sm-6 col-md-3">
+    <a href="<%= edit_album_song_path(@album, song) %>" class="thumbnail">
+      <img src="<%= song.photo ? song.photo.preview : '#' %>">
+    </a>
+  </div>
+  <% end %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit '保存', :class => "btn btn-default", :disable_with => '保存中' %>
+    或者
+    <%= link_to '返回', music_path %>
+  </div>
+</fieldset>
+<% end %>

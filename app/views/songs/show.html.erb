@@ -1,0 +1,19 @@
+<div class="container">
+<%= render "home/menu"%>
+<div class="song-header">
+	<a class="left-song pull-left" href="<%= @left ? album_song_path(@album, @left) : "#" %>">上一首</a>
+	<span class="song-title"><%= @song.index %>.&nbsp;&nbsp;<%= @song.name %></span>
+	<a class="right-song pull-right" href="<%= @right ? album_song_path(@album, @right) : "#" %>">下一首</a>
+</div>
+<div class="player sm2-panel">
+	<a class="sm2-link" style="display: none" href="<%= @song.url %>"><%= @album.id%>-<%= @song.id %></a>
+	<img src="<%= @song.photo.song %>" class = "img-responsive player-photo" >
+	<div class="play-button"></div>
+</div>
+<div class="song-footer">
+	<div class="song-about-img"></div>
+	<div class="song-about-text"><%= simple_format @song.info %></div>
+	<div class="song-lyrics-img"></div>
+	<div class="song-lyrics-text"><%= simple_format @song.lyrics %></div>
+</div>
+</div>

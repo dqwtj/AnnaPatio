@@ -1,0 +1,147 @@
+div.song-header {
+  text-align: center;
+  margin: 10px 15px;
+}
+
+span.song-title {
+  font-weight: bold;
+}
+
+div.song-footer {
+  margin: 10px 5px;
+  line-height: 1.75;
+  font-weight: bold;
+}
+
+div.song-about-img {
+  background-image: image-url('song-about.png');
+  background-size: 75px 15px;
+  height: 15px;
+  width: 74px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+div.song-lyrics-img {
+  background-image: image-url('song-lyrics.png');
+  background-size: 30px 15px;
+  height: 15px;
+  width: 30px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+div.player {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  min-height: 320px;
+  margin: 0 -15px;
+}
+
+img.player-photo {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.play-button {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -33px 0 0 -33px;
+}
+
+div.sm2-panel div.play-button {
+  width: 67px;
+  height: 67px;
+  background: image-url("play-button.png") no-repeat;
+  background-size: 67px 67px;
+}
+
+div.sm2-playing div.play-button {
+  width: 67px;
+  height: 67px;
+  background: image-url("pause-button.png") no-repeat;
+  background-size: 67px 67px;
+}
+
+div.sm2-paused div.play-button {
+  width: 67px;
+  height: 67px;
+  background: image-url("play-button.png") no-repeat;
+  background-size: 67px 67px;
+}
+
+
+div.anna-guitar-img {
+  margin: 0 -15px;
+}
+
+div.music-index-link {
+  margin: 20px 0px 10px 0px;
+}
+
+a.music-new-link {
+  background-image: image-url('music-new.png');
+  background-size: 82px 37px;
+  height: 37px;
+  width: 82px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+a.music-album-link {
+  background-image: image-url('music-album.png');
+  background-size: 99px 37px;
+  height: 37px;
+  width: 99px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+a.music-live-link {
+  background-image: image-url('music-live.png');
+  background-size: 84px 38px;
+  height: 37px;
+  width: 84px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+a.music-interview-link {
+  background-image: image-url('music-interview.png');
+  background-size: 84px 37px;
+  height: 37px;
+  width: 84px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+div.music-about-img {
+  background-image: image-url('music-about.png');
+  background-size: 113px 15px;
+  height: 15px;
+  width: 113px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 35px 0 30px 20px;
+}
+
+div.music-about-text {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}

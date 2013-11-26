@@ -13,8 +13,13 @@ AnnaPatio::Application.routes.draw do
 
   resources :poems
   resources :galleries do
-    resources :photos
+    resources :photos, :only => [:create, :update, :destroy]
   end
+  resources :albums do
+    resources :songs
+  end
+  get 'songs/:song_id/photo' => 'photos#index', as: 'song_photo'
+  get 'music' => 'home#music'
 
   # Example resource route with options:
   #   resources :products do

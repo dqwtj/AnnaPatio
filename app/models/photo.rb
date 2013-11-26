@@ -5,6 +5,7 @@ class Photo
   field :base_url
   
   belongs_to :gallery
+  belongs_to :song
     
   validates_presence_of :base_url
   
@@ -12,8 +13,8 @@ class Photo
     self.base_url.blank? ? "#" : self.upyun_url+self.base_url+"!mobile"
   end
   
-  def desktop
-    self.base_url.blank? ? "#" : self.upyun_url+self.base_url+"!desktop"
+  def song
+    self.base_url.blank? ? "#" : self.upyun_url+self.base_url+"!song"
   end
   
   def preview

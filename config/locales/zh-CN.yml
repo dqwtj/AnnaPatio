@@ -10,6 +10,15 @@
         title: 标题
         is_design: 这是设计？
         body: 正文
+      album:
+        name: 名称
+        info: 信息
+      song:
+        name: 名称
+        info: 信息
+        lyrics: 歌词
+        url: 文件链接
+        index: 序号
     errors:
       messages:
         blank: "不能为空"
