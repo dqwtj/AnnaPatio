@@ -8,9 +8,13 @@ span.song-title {
 }
 
 div.song-footer {
-  margin: 10px 5px;
+  margin: 10px 8px;
   line-height: 1.75;
   font-weight: bold;
+}
+
+div.song-about-text {
+  text-align: justify;
 }
 
 div.song-about-img {
@@ -137,11 +141,12 @@ div.music-about-img {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
-  margin: 35px 0 30px 20px;
+  margin: 35px 0 10px 20px;
 }
 
 div.music-about-text {
-  margin-left: 30px;
-  margin-bottom: 10px;
+  margin: 20px 20px;
   font-weight: bold;
+  line-height: 1.75;
+  text-align: justify;
 }
