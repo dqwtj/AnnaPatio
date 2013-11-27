@@ -9,6 +9,10 @@ div.content {
   font-weight: bold;
 }
 
+div.content.gallery {
+  margin: 15px -15px;
+}
+
 ul.menu {
   list-style: none outside none;
   padding: 0 5px;

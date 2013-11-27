@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require soundmanager2
+//= require twitter/bootstrap/transition
+//= require twitter/bootstrap/carousel
 //= require_tree .
