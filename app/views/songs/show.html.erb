@@ -1,5 +1,5 @@
 <div class="container">
-<%= render "home/menu"%>
+<%= render "home/menu", :opt => "music" %>
 <div class="song-header">
 	<a class="left-song pull-left text-hide" href="<%= @left ? album_song_path(@album, @left) : "#" %>">上一首</a>
 	<span class="song-playing" style="display : none">正在播放：</span>

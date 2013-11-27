@@ -25,8 +25,12 @@ ul.menu > li {
 ul.menu li.divider {
   height: 15px;
   width: 0px;
-  border-left: #000 solid 2px;
+  border-left: #A0A0A0 solid 2px;
   margin: 15px 13px;
+}
+
+ul.menu li.divider.active {
+  border-left: #000 solid 2px;
 }
 
 ul.menu > li > a {
@@ -41,8 +45,8 @@ ul.menu > li > div {
   margin: 0 auto;
 }
 
-#song-en-menu {
-  background-image: image-url('song-en-menu.png');
+ul.menu > li > div.song-en-menu {
+  background-image: image-url('song-en-menu-disable.png');
   background-size: 26px 6px;
   height: 6px;
   width: 26px;
@@ -51,8 +55,12 @@ ul.menu > li > div {
   display: block;
 }
 
-#song-chs-menu {
-  background-image: image-url('song-chs-menu.png');
+ul.menu > li > div.song-en-menu.active {
+  background-image: image-url('song-en-menu.png');
+}
+
+ul.menu > li > a.song-chs-menu {
+  background-image: image-url('song-chs-menu-disable.png');
   background-size: 15px 15px;
   height: 15px;
   width: 15px;
@@ -61,8 +69,12 @@ ul.menu > li > div {
   display: block;
 }
 
-#poem-en-menu {
-  background-image: image-url('poem-en-menu.png');
+ul.menu > li > a.song-chs-menu.active {
+  background-image: image-url('song-chs-menu.png');
+}
+
+ul.menu > li > div.poem-en-menu {
+  background-image: image-url('poem-en-menu-disable.png');
   background-size: 70px 6px;
   height: 6px;
   width: 70px;
@@ -71,8 +83,12 @@ ul.menu > li > div {
   display: block;
 }
 
-#poem-chs-menu {
-  background-image: image-url('poem-chs-menu.png');
+ul.menu > li > div.poem-en-menu.active {
+  background-image: image-url('poem-en-menu.png');
+}
+
+ul.menu > li > a.poem-chs-menu {
+  background-image: image-url('poem-chs-menu-disable.png');
   background-size: 60px 14px;
   height: 14px;
   width: 60px;
@@ -81,8 +97,12 @@ ul.menu > li > div {
   display: block;
 }
 
-#photo-en-menu {
-  background-image: image-url('photo-en-menu.png');
+ul.menu > li > a.poem-chs-menu.active {
+  background-image: image-url('poem-chs-menu.png');
+}
+
+ul.menu > li > div.photo-en-menu {
+  background-image: image-url('photo-en-menu-disable.png');
   background-size: 32px 6px;
   height: 6px;
   width: 32px;
@@ -91,8 +111,12 @@ ul.menu > li > div {
   display: block;
 }
 
-#photo-chs-menu {
-  background-image: image-url('photo-chs-menu.png');
+ul.menu > li > div.photo-en-menu.active {
+  background-image: image-url('photo-en-menu.png');
+}
+
+ul.menu > li > a.photo-chs-menu {
+  background-image: image-url('photo-chs-menu-disable.png');
   background-size: 30px 14px;
   height: 14px;
   width: 30px;
@@ -101,8 +125,12 @@ ul.menu > li > div {
   display: block;
 }
 
-#design-en-menu {
-  background-image: image-url('design-en-menu.png');
+ul.menu > li > a.photo-chs-menu.active {
+  background-image: image-url('photo-chs-menu.png');
+}
+
+ul.menu > li > div.design-en-menu {
+  background-image: image-url('design-en-menu-disable.png');
   background-size: 36px 6px;
   height: 6px;
   width: 36px;
@@ -111,14 +139,22 @@ ul.menu > li > div {
   display: block;
 }
 
-#design-chs-menu {
-  background-image: image-url('design-chs-menu.png');
+ul.menu > li > div.design-en-menu.active {
+  background-image: image-url('design-en-menu.png');
+}
+
+ul.menu > li > a.design-chs-menu {
+  background-image: image-url('design-chs-menu-disable.png');
   background-size: 30px 14px;
   height: 14px;
   width: 30px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
+}
+
+ul.menu > li > a.design-chs-menu.active {
+  background-image: image-url('design-chs-menu.png');
 }
 
 

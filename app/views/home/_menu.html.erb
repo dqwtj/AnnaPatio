@@ -1,23 +1,23 @@
 <nav>
 	<ul class="menu">
-		<li class="active">
-			<div id="song-en-menu"></div>
-			<a href="#" id="song-chs-menu"></a>
+		<li>
+			<div class="song-en-menu <%= 'active' if ['music', 'all'].include? opt %>"></div>
+			<a href="<%= music_path %>" class="song-chs-menu <%= 'active' if ['music', 'all'].include? opt %>"></a>
 		</li>
-		<li class="divider"></li>
-		<li class="active">
-			<div id="poem-en-menu"></div>
-			<a href="#" id="poem-chs-menu"></a>
+		<li class="divider <%= 'active' if ['music', 'poems' , 'all'].include? opt %>"></li>
+		<li>
+			<div class="poem-en-menu <%= 'active' if ['poems', 'all'].include? opt %>"></div>
+			<a href="<%= poems_path %>" class="poem-chs-menu <%= 'active' if ['poems', 'all'].include? opt %>"></a>
 		</li>
-		<li class="divider"></li>
-		<li class="active">
-			<div id="photo-en-menu"></div>
-			<a href="#" id="photo-chs-menu"></a>
+		<li class="divider <%= 'active' if ['galleries', 'poems' , 'all'].include? opt %>"></li>
+		<li>
+			<div class="photo-en-menu <%= 'active' if ['galleries', 'all'].include? opt %>"></div>
+			<a href="<%= galleries_path %>" class="photo-chs-menu <%= 'active' if ['galleries', 'all'].include? opt %>"></a>
 		</li>
-		<li class="divider"></li>
-		<li class="active">
-			<div id="design-en-menu"></div>
-			<a href="#" id="design-chs-menu"></a>
+		<li class="divider <%= 'active' if ['galleries', 'design' , 'all'].include? opt %>"></li>
+		<li>
+			<div class="design-en-menu <%= 'active' if ['design', 'all'].include? opt %>"></div>
+			<a href="#" class="design-chs-menu <%= 'active' if ['design', 'all'].include? opt %>"></a>
 		</li>
 	</ul>
 </nav>
