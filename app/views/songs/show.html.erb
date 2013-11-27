@@ -17,3 +17,6 @@
 	<div class="song-lyrics-text"><%= simple_format @song.lyrics %></div>
 </div>
 </div>
+<% content_for :title do %>
+<%= @song.name %> - 程璧
+<% end %>
