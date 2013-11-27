@@ -66,23 +66,28 @@ function SoundPlayer() {
           onplay: function() {
           	panel.removeClass(pl.css.sDefault);
             panel.addClass(pl.css.sPlaying);
+            $("span.song-playing").show();
           },
           onpause: function() {
           	panel.removeClass(pl.css.sPlaying);
             panel.addClass(pl.css.sPaused);
+            $("span.song-playing").hide();
           },
           onresume: function() {
           	panel.removeClass(pl.css.sPaused);
             panel.addClass(pl.css.sPlaying);
+            $("span.song-playing").show();
           },
           onstop: function() {
           	panel.removeClass(pl.css.sPlaying);
           	panel.removeClass(pl.css.sPaused);
             panel.addClass(pl.css.sDefault);
+            $("span.song-playing").hide();
           },
           onfinish: function() {
           	panel.removeClass(pl.css.sPlaying);
           	panel.addClass(pl.css.sDefault);
+          	$("span.song-playing").hide();
           },
         });
       } else if (panel.hasClass(pl.css.sPlaying)) {

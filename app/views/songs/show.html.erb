@@ -1,9 +1,10 @@
 <div class="container">
 <%= render "home/menu"%>
 <div class="song-header">
-	<a class="left-song pull-left" href="<%= @left ? album_song_path(@album, @left) : "#" %>">上一首</a>
+	<a class="left-song pull-left text-hide" href="<%= @left ? album_song_path(@album, @left) : "#" %>">上一首</a>
+	<span class="song-playing" style="display : none">正在播放：</span>
 	<span class="song-title"><%= @song.index %>.&nbsp;&nbsp;<%= @song.name %></span>
-	<a class="right-song pull-right" href="<%= @right ? album_song_path(@album, @right) : "#" %>">下一首</a>
+	<a class="right-song pull-right text-hide" href="<%= @right ? album_song_path(@album, @right) : "#" %>">下一首</a>
 </div>
 <div class="player sm2-panel">
 	<a class="sm2-link" style="display: none" href="<%= @song.url %>"><%= @album.id%>-<%= @song.id %></a>

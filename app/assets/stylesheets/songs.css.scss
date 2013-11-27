@@ -3,8 +3,30 @@ div.song-header {
   margin: 10px 15px;
 }
 
-span.song-title {
+div.song-header > span {
   font-weight: bold;
+}
+
+div.song-header > a {
+  margin-top: 5px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+a.left-song {
+  background-image: image-url('left-song.png');
+  background-size: 16px 10px;
+  height: 10px;
+  width: 16px;
+}
+
+a.right-song {
+  background-image: image-url('right-song.png');
+  background-size: 16px 10px;
+  height: 10px;
+  width: 16px;
+  
 }
 
 div.song-footer {
@@ -149,4 +171,8 @@ div.music-about-text {
   font-weight: bold;
   line-height: 1.75;
   text-align: justify;
+}
+
+#share-to-friend {
+  margin: 10px auto;
 }
