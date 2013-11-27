@@ -3,14 +3,21 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 div.content {
-  font-size: 0.8em;
   line-height: 1.8;
   margin: 15px auto;
   font-weight: bold;
 }
 
+div.content.header {
+  font-size: 11px;
+}
+
 div.content.gallery {
   margin: 15px -15px;
+}
+
+div.content.info {
+  font-size: 13px;
 }
 
 ul.menu {
@@ -29,7 +36,7 @@ ul.menu > li {
 ul.menu li.divider {
   height: 15px;
   width: 0px;
-  border-left: #A0A0A0 solid 2px;
+  border-left: #DDD solid 2px;
   margin: 15px 13px;
 }
 
