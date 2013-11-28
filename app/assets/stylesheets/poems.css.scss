@@ -24,7 +24,7 @@ ul.poem-index-title {
   padding: 0 0;
   line-height: 2.5;
   font-weight: bold;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 ul.poem-index-title > li > a {
@@ -35,8 +35,8 @@ ul.poem-index-title > li > a {
 
 div.poem-content {
   font-weight: bold;
-  margin-top: 25px;
-  margin-bottom: 60px;
+  margin-top: 15px;
+  margin-bottom: 30px;
   line-height: 1.75;
   padding: 0 65px;
   font-size: 15px;
@@ -51,14 +51,13 @@ div.poem-content.essay {
 }
 
 div.poem-content.essay span.poem-body > p {
-  text-indent: 1em;
   text-align: justify;
   margin-bottom: 10px;
 }
 
 h4.poem-title {
   text-align: center;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   margin-bottom: 30px;
 }

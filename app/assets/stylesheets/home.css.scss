@@ -36,12 +36,12 @@ ul.menu > li {
 ul.menu li.divider {
   height: 15px;
   width: 0px;
-  border-left: #DDD solid 2px;
+  border-left: #DDD solid 1px;
   margin: 15px 13px;
 }
 
 ul.menu li.divider.active {
-  border-left: #000 solid 2px;
+  border-left: #000 solid 1px;
 }
 
 ul.menu > li > a {
@@ -202,7 +202,7 @@ ul.menu > li > a.design-chs-menu.active {
   display: block;
   margin-left: 15px;
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 2px;
 }
 
 #anna-1-img {
