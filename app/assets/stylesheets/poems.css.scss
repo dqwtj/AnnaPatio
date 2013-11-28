@@ -83,13 +83,14 @@ div.next-poem > a {
 }
 
 div.pagination {
-  margin: 20px auto;
+  margin: -5px auto;
   display: block;
   text-align: center;
 }
 
 ul.pagination {
   border: none;
+  margin: 15px 0;
 }
 
 ul.pagination > li > a {
