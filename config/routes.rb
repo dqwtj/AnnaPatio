@@ -13,7 +13,7 @@ AnnaPatio::Application.routes.draw do
 
   resources :poems
   resources :galleries do
-    resources :photos, :only => [:create, :update, :destroy]
+    resources :photos, :only => [:index, :create, :update, :destroy]
   end
   resources :albums do
     resources :songs
