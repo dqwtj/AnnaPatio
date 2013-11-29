@@ -42,6 +42,14 @@ class PhotosController < ApplicationController
     end
   end
   
+  def destroy
+    @gallery = Gallery.find params[:gallery_id]
+    @photo = Photo.find params[:id]
+    
+    @photo.destroy
+    redirect_to edit_gallery_path(@gallery)
+  end
+  
   def poem_params
     params.require(:gallery).permit(:title, :body, :is_design)
   end

@@ -6,13 +6,14 @@
   <%= f.input :is_design, :as => :boolean %>
   <div class="row">
   <% @gallery.photos.each do |photo| %>
-  <div class="col-sm-6 col-md-3">
-    <a href="#" class="thumbnail">
+  <div class="col-sm-6 col-md-3" style="text-align: center; margin-bottom: 15px;">
+    <a href="#" class="thumbnail" style="margin-bottom: 2px;">
       <img src="<%= photo.preview %>">
     </a>
+    <%= link_to "点击删除", gallery_photo_path(@gallery, photo), :method => :delete, :data => {:confirm => '确定要删除照片，该操作不可恢复'}, :class => "btn btn-default" %>
   </div>
   <% end %>
-</div>
+  </div>
 
   <div class="actions">
     <%= f.submit '保存', :class => "btn btn-default", :disable_with => '保存中' %>
