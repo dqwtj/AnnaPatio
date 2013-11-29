@@ -82,28 +82,28 @@ div.play-button {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin: -33px 0 0 -33px;
+  margin: -30px 0 0 -30px;
 }
 
 div.sm2-panel div.play-button {
-  width: 67px;
-  height: 67px;
+  width: 60px;
+  height: 60px;
   background: image-url("play-button.png") no-repeat;
-  background-size: 67px 67px;
+  background-size: 60px 60px;
 }
 
 div.sm2-playing div.play-button {
-  width: 67px;
-  height: 67px;
+  width: 60px;
+  height: 60px;
   background: image-url("pause-button.png") no-repeat;
-  background-size: 67px 67px;
+  background-size: 60px 60px;
 }
 
 div.sm2-paused div.play-button {
-  width: 67px;
-  height: 67px;
+  width: 60px;
+  height: 60px;
   background: image-url("play-button.png") no-repeat;
-  background-size: 67px 67px;
+  background-size: 60px 60px;
 }
 
 
@@ -117,9 +117,9 @@ div.music-index-link {
 
 a.music-new-link {
   background-image: image-url('music-new.png');
-  background-size: 82px 37px;
+  background-size: 60px 37px;
   height: 37px;
-  width: 82px;
+  width: 60px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
@@ -127,9 +127,9 @@ a.music-new-link {
 
 a.music-album-link {
   background-image: image-url('music-album.png');
-  background-size: 99px 37px;
+  background-size: 75px 37px;
   height: 37px;
-  width: 99px;
+  width: 75px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
@@ -137,19 +137,19 @@ a.music-album-link {
 
 a.music-live-link {
   background-image: image-url('music-live.png');
-  background-size: 84px 38px;
+  background-size: 60px 37px;
   height: 37px;
-  width: 84px;
+  width: 60px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
 }
 
-a.music-interview-link {
-  background-image: image-url('music-interview.png');
-  background-size: 84px 37px;
+a.music-vedio-link {
+  background-image: image-url('music-vedio.png');
+  background-size: 60px 37px;
   height: 37px;
-  width: 84px;
+  width: 60px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
@@ -175,4 +175,30 @@ div.music-about-text {
 
 div.music-about-text div.anna-patio-img {
   margin: 15px -20px;
+}
+
+div.live-info-img {
+  background-image: image-url('live-info.png');
+  background-size: 90px 15px;
+  height: 15px;
+  width: 90px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 20px 0 15px 15px;
+}
+
+ul.live-info-list {
+  font-size: 13px;
+  line-height: 1.75;
+  margin-left: -25px;
+  font-weight: bold;
+}
+
+ul.live-info-list > li {
+  margin-bottom: 10px;
+}
+
+ul.live-info-list > li > span.live-date {
+  margin-right: 3px;
 }

@@ -125,3 +125,37 @@ ul.pagination > li.active > a:hover {
   background-color: #f2f1f1;
   color: #000;
 }
+
+ul.pagination > li.prev.previous_page {
+  left: 30px;
+  position: absolute;
+}
+
+ul.pagination > li.prev.previous_page > a {
+  background-image: image-url('left-song.png');
+  background-size: 16px 10px;
+  height: 10px;
+  width: 16px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+  font: 0px/0 a;
+  margin-top: 12px;
+}
+
+ul.pagination > li.next.next_page {
+  right: 30px;
+  position: absolute;
+}
+
+ul.pagination > li.next.next_page > a {
+  background-image: image-url('right-song.png');
+  background-size: 16px 10px;
+  height: 10px;
+  width: 16px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+  font: 0px/0 a;
+  margin-top: 12px;
+}
