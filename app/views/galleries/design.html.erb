@@ -1,17 +1,17 @@
 <div class="container">
-<%= render "home/menu", :opt => "galleries" %>
+<%= render "home/menu", :opt =>"designs" %>
 <div class="gallery-index-panel">
-	<% @galleries.each do |gallery| %>
+	<% @designs.each do |design| %>
 	<div class="gallery-item">
 	<div class="gallery-text">
-	<h5><%= gallery.title %></h5>
-	<%= simple_format gallery.body %>
+	<h5><%= design.title %></h5>
+	<%= simple_format design.body %>
 	</div>
-	<% gallery.photos.each do |photo| %>
+	<% design.photos.each do |photo| %>
 	<img src="<%= photo.mobile %>" class = "img-responsive gallery-photo" >
 	<% end %>
 	</div>
 	<% end %>
 </div>
-<%= will_paginate @galleries %>
+<%= will_paginate @designs %>
 </div>

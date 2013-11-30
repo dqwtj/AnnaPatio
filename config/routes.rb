@@ -21,6 +21,7 @@ AnnaPatio::Application.routes.draw do
   get 'songs/:song_id/photo' => 'photos#index', as: 'song_photo'
   get 'music' => 'home#music'
   get 'music/live' => 'home#live'
+  get 'designs' => 'galleries#design'
 
   # Example resource route with options:
   #   resources :products do

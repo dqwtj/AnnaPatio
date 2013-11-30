@@ -21,10 +21,10 @@
 			<div class="photo-en-menu <%= 'active' if ['galleries', 'all'].include? opt %>"></div>
 			<a href="<%= galleries_path %>" class="photo-chs-menu <%= 'active' if ['galleries', 'all'].include? opt %>"></a>
 		</li>
-		<li class="divider <%= 'active' if ['galleries', 'design' , 'all'].include? opt %>"></li>
+		<li class="divider <%= 'active' if ['galleries', 'designs' , 'all'].include? opt %>"></li>
 		<li>
-			<div class="design-en-menu <%= 'active' if ['design', 'all'].include? opt %>"></div>
-			<a href="#" class="design-chs-menu <%= 'active' if ['design', 'all'].include? opt %>"></a>
+			<div class="design-en-menu <%= 'active' if ['designs', 'all'].include? opt %>"></div>
+			<a href="<%= designs_path %>" class="design-chs-menu <%= 'active' if ['designs', 'all'].include? opt %>"></a>
 		</li>
 	</ul>
 </nav>
