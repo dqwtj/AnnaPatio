@@ -34,6 +34,13 @@ class GalleriesController < ApplicationController
     end
   end
   
+  def destroy 
+    @gallery = Gallery.find(params[:id])
+    
+    @gallery.destroy
+    redirect_to galleries_path, :notice => '《#{@gallery.title}》删除成功'
+  end
+  
   def gallery_params
     params.require(:gallery).permit(:title, :body, :is_design)
   end

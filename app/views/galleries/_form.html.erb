@@ -14,7 +14,9 @@
   </div>
   <% end %>
   </div>
-
+  <div style="margin: 10px 0;">
+  	 <%= link_to "你可以点击删除整篇", gallery_path(@gallery), :method => :delete, :data => {:confirm => '确定要删除整篇，该操作不可恢复'}, :class => "btn btn-danger" %>
+  </div>
   <div class="actions">
     <%= f.submit '保存', :class => "btn btn-default", :disable_with => '保存中' %>
     或者
