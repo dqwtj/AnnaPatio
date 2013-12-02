@@ -202,3 +202,40 @@ ul.live-info-list > li {
 ul.live-info-list > li > span.live-date {
   margin-right: 3px;
 }
+
+div.vedio-info-index {
+  font-size: 13px;
+  line-height: 1.75;
+  font-weight: bold;
+  margin: 10px -15px;
+}
+
+div.vedio-info-item {
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #FFF;
+  margin-bottom: 15px;
+}
+
+a.vedio-info-link {
+  color: #000;
+  float: right;
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
+
+div.vedio-info-image {
+  margin: 10px -15px 0 -15px;
+}
+
+span.left-arrow {
+  background-image: image-url('left-arrow.png');
+  background-size: 6px 9px;
+  height: 9px;
+  width: 6px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-left: 3px;
+}
