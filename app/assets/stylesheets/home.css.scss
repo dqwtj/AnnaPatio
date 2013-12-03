@@ -20,6 +20,28 @@ div.content.info {
   font-size: 13px;
 }
 
+div.footer {
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 1.75;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #FFF;
+}
+
+div.footer-img {
+  background-image: image-url('home-banner.png');
+  background-size: 181px 43px;
+  height: 43px;
+  width: 181px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 38px auto;
+}
+
 ul.menu {
   list-style: none outside none;
   padding: 0 5px;
