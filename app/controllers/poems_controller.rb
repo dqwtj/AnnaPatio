@@ -9,7 +9,7 @@ class PoemsController < ApplicationController
   end
   
   def index
-    @poems = Poem.desc(:created_at).paginate :page => params[:page], :per_page => 1
+    @poems = Poem.desc(:created_at).paginate :page => params[:page], :per_page => 10
   end
   
   def show
