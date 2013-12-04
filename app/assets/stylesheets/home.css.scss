@@ -10,14 +10,20 @@ div.content {
 
 div.content.header {
   font-size: 13px;
+  margin-left: 3px;
 }
 
 div.content.gallery {
-  margin: 15px -15px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 div.content.info {
   font-size: 13px;
+  margin-left: 3px;
+  margin-bottom: 25px;
 }
 
 div.footer {

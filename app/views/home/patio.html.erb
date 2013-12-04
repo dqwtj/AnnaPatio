@@ -10,6 +10,7 @@
 	所以你觉得明亮、温暖，<br />
 	那是我的方式，来对待这个世界。
 </div>
+<%= render "menu", :opt => 'all'%>
 <div class="content gallery">
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -33,7 +34,6 @@
   </div>
 </div>
 </div>
-<%= render "menu", :opt => 'all'%>
 <div class="content info">
 <div class="row"><div id="profile-img"></div></div>
 程璧，毕业于北京大学外文系，<br />
@@ -48,7 +48,8 @@
 <% content_for :scripts do %>
 <script>
 $(function(){
-	$('.carousel').carousel()
+	$('.carousel').carousel();
+	$('span.footer-line-2').hide();
 });
 </script>
 <% end %>
