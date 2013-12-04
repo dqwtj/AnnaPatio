@@ -6,5 +6,5 @@
 	<li><%= link_to poem.title, poem_path(poem) %></li>
 	<% end %>
 </ul>
-<%= will_paginate @poems %>
+<%= will_paginate @poems, :inner_window => 2 %>
 </div>
