@@ -123,6 +123,7 @@ a.music-new-link {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
+  margin-bottom: 15px;
 }
 
 a.music-album-link {
@@ -133,6 +134,7 @@ a.music-album-link {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
+  margin-bottom: 15px;
 }
 
 a.music-live-link {
@@ -253,6 +255,10 @@ span.left-arrow {
   }
   div.song-footer {
     margin: 35px 30px;
+  }
+  
+  div.music-about-img {
+    margin-top: 15px;
   }
   
   div.live-info-img {
