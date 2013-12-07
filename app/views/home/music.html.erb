@@ -2,12 +2,10 @@
 <%= render 'menu', :opt => "music"%>
 <div class="anna-guitar-img"><img src="<%= image_path("anna-guitar.jpg")%>" class = "img-responsive" ></div>
 <div class="row music-index-link">
-	<div class="col-xs-6"><a href="<%= album_song_path(@lastest, @lastest.songs.first)%>" class="music-new-link"></a></div>
-	<div class="col-xs-6"><a href="<%= album_song_path(@album, @album.songs.first)%>" class="music-album-link"></a></div>
-</div>
-<div class="row music-index-link">
-	<div class="col-xs-6"><a href="<%= music_live_path %>" class="music-live-link"></a></div>
-	<div class="col-xs-6"><a href="<%= music_vedio_path %>" class="music-vedio-link"></a></div>
+	<div class="col-xs-6 col-sm-3"><a href="<%= album_song_path(@lastest, @lastest.songs.first)%>" class="music-new-link"></a></div>
+	<div class="col-xs-6 col-sm-3"><a href="<%= album_song_path(@album, @album.songs.first)%>" class="music-album-link"></a></div>
+	<div class="col-xs-6 col-sm-3"><a href="<%= music_live_path %>" class="music-live-link"></a></div>
+	<div class="col-xs-6 col-sm-3"><a href="<%= music_vedio_path %>" class="music-vedio-link"></a></div>
 </div>
 <div class="row">
 	<div class="music-about-img"></div>

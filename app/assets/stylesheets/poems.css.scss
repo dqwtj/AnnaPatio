@@ -162,3 +162,13 @@ ul.pagination > li.next.next_page > a {
   font: 0px/0 a;
   margin-top: 12px;
 }
+
+@media only screen and (min-width: 700px) {
+  ul.pagination > li.prev.previous_page {
+    position: static;
+  }
+  
+  ul.pagination > li.next.next_page {
+    position: static;
+  }
+}

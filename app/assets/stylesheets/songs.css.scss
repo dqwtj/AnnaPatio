@@ -239,3 +239,19 @@ span.left-arrow {
   display: inline-block;
   margin-left: 3px;
 }
+
+@media only screen and (min-width: 700px) {
+  div.song-header {
+    width: 400px;
+    margin: 10px auto;
+  }
+  
+  div.player {
+    width: 600px;
+    min-height: 600px;
+    margin: 10px auto;
+  }
+  div.song-footer {
+    margin: 35px 30px;
+  }
+}

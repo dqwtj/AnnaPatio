@@ -10,7 +10,7 @@ div.content {
 
 div.content.header {
   font-size: 13px;
-  margin-left: 3px;
+  padding-left: 3px;
 }
 
 div.content.gallery {
@@ -22,7 +22,7 @@ div.content.gallery {
 
 div.content.info {
   font-size: 13px;
-  margin-left: 3px;
+  padding-left: 3px;
   margin-bottom: 25px;
 }
 
@@ -242,4 +242,17 @@ ul.menu > li > a.design-chs-menu.active {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
+}
+
+@media only screen and (min-width: 700px) {
+  div.content {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  div.content.gallery {
+    max-width: 100%;
+  } 
+    
 }
