@@ -21,6 +21,10 @@ class Photo
     self.base_url.blank? ? "#" : self.upyun_url+self.base_url+"!preview"
   end
   
+  def normal 
+    self.base_url.blank? ? "#" : self.upyun_url+self.base_url+"!normal"
+  end
+  
   protected
     def upyun_url
       "http://annapatio-photo.b0.upaiyun.com"
