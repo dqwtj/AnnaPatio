@@ -1,19 +1,9 @@
 <div class="container">
 <%= render 'menu', :opt => "music"%>
-<div class="anna-guitar-img"><img src="<%= image_path("anna-guitar.jpg")%>" class = "img-responsive" ></div>
-<div class="row music-index-link">
-	<div class="col-xs-6 col-sm-3"><a href="<%= album_song_path(@lastest, @lastest.songs.first)%>" class="music-new-link"></a></div>
-	<div class="col-xs-6 col-sm-3"><a href="<%= album_song_path(@album, @album.songs.first)%>" class="music-album-link"></a></div>
-	<div class="col-xs-6 col-sm-3"><a href="<%= music_live_path %>" class="music-live-link"></a></div>
-	<div class="col-xs-6 col-sm-3"><a href="<%= music_vedio_path %>" class="music-vedio-link"></a></div>
-</div>
+<a href="<%= music_path %>" class="back-to-text pull-right" >返回上页</a>
 <div class="row">
 	<div class="music-about-img"></div>
-	<div class="music-about-text visible-xs">
-	    <p>我叫程璧，出生在北方，名字是祖母给我起的。小时候我跟祖母生活在一个北方四合小院，那里是我创作的最初灵感来源。祖母出生在民国时代，是我见过的最诗情画意的人，喜欢写作和歌唱，教四岁的我写毛笔字背唐诗。印象最深刻是她经常哼唱那首《松花江上》，九一八那年她...</p>
-	    <a href="<%= music_about_path %>" class="read-more-text pull-right">阅读全文</a>
-	</div>
-	<div class="music-about-text hidden-xs">
+	<div class="music-about-text">
 		<p>我叫程璧，出生在北方，名字是祖母给我起的。小时候我跟祖母生活在一个北方四合小院，那里是我创作的最初灵感来源。祖母出生在民国时代，是我见过的最诗情画意的人，喜欢写作和歌唱，教四岁的我写毛笔字背唐诗。印象最深刻是她经常哼唱那首《松花江上》，九一八那年她从东北跟着父亲入关，从此离开了自己的家乡。每次她唱到‘流浪’二字，我都听得到里面的乡愁。</p>
 		<div class="anna-patio-img"><img src="http://annapatio-photo.b0.upaiyun.com/home/anna-music-3.jpg!normal" class="img-responsive" /></div>
 		<p>后来，我写了一首小诗来描述儿时生活过的小院的模样，“庭前花木满，院外小径芳，四时常相往，晴日共剪窗。”再后来在北京大学读书期间，我认识了吉他社的大家开始学习弹吉他和作曲，并为这首诗配上了和弦和旋律，创作了一首童谣小曲取名《晴日共剪窗》。从那时候起我开始不断写歌，并带着自己原创作品成为了北大校园十佳歌手。毕业那年夏我在北京南锣鼓巷陆玖音乐咖啡馆举办了自己的首场音乐会，发表了自己的首张原创音乐专辑《晴日共剪窗》。</p>

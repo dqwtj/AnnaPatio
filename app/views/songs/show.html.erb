@@ -1,5 +1,12 @@
 <div class="container">
 <%= render "home/menu", :opt => "music" %>
+<a href="<%= music_path %>" class="back-to-text pull-right" >返回上页</a>
+<% if @album.id == 1 %>
+<div class="album-info-img"></div>
+<% end %>
+<% if @album.id == 2 %>
+<div class="new-info-img"></div>
+<% end %>
 <div class="song-header">
 	<a class="left-song pull-left text-hide" href="<%= @left ? album_song_path(@album, @left) : "#" %>">上一首</a>
 	<span class="song-playing" style="display : none">正在播放：</span>

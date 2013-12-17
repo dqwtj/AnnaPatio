@@ -14,6 +14,18 @@ div.song-header > a {
   display: block;
 }
 
+a.back-to-text {
+  color: #000;
+  margin: 10px 0;
+}
+
+a.read-more-text {
+  color: #000;
+  font-weight: normal;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
 a.left-song {
   background-image: image-url('left-song.png');
   background-size: 16px 10px;
@@ -112,7 +124,7 @@ div.anna-guitar-img {
 }
 
 div.music-index-link {
-  margin: 20px 0px 10px 0px;
+  margin: 20px 0px 20px 0px;
 }
 
 a.music-new-link {
@@ -165,7 +177,7 @@ div.music-about-img {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
-  margin: 25px 0 10px 20px;
+  margin: 13px 0 10px 20px;
 }
 
 div.music-about-text {
@@ -187,7 +199,40 @@ div.live-info-img {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
-  margin: 20px 0 15px 15px;
+  margin: 13px 0 15px 15px;
+}
+
+div.vedio-info-img {
+  background-image: image-url('vedio-info.png');
+  background-size: 60px 14px;
+  height: 14px;
+  width: 60px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 13px 0 17px 10px;
+}
+
+div.new-info-img {
+  background-image: image-url('new-info.png');
+  background-size: 59px 14px;
+  height: 14px;
+  width: 59px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 13px 0 17px 10px;
+}
+
+div.album-info-img {
+  background-image: image-url('album-info.png');
+  background-size: 113px 14px;
+  height: 14px;
+  width: 113px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 13px 0 17px 10px;
 }
 
 ul.live-info-list {

@@ -21,6 +21,7 @@ AnnaPatio::Application.routes.draw do
   get 'songs/:song_id/photo' => 'photos#index', as: 'song_photo'
   get 'music' => 'home#music'
   get 'music/live' => 'home#live'
+  get 'music/about' => 'home#about'
   get 'designs' => 'galleries#design'
   get 'music/vedio' => 'home#vedio'
 
