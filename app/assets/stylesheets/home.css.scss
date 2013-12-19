@@ -278,7 +278,7 @@ ul.menu > li > a.design-chs-menu.active {
   }
   
   ul.menu {
-    padding-right: 40px;
+    padding-right: 30px;
   }
   
   #logo-img {
@@ -293,22 +293,22 @@ ul.menu > li > a.design-chs-menu.active {
   }
   
   div.intro-text {
-    font-size: 11.8px;
+    font-size: 11.5px;
     font-weight: bold;
-    padding: 0 0;
+    padding: 0 0 0 3px;
     margin-top: 60px;
     line-height: 1.75;
-    width: 72%;
+    width: 73%;
   }
   
   div.profile-text {
-    font-size: 9.2px;
+    font-size: 9px;
     font-weight: bold;
-    padding-left: 7px;
+    padding-left: 5px;
     padding-right: 0;
     margin-bottom: 35px;
     line-height: 1.75;
-    width: 28%;
+    width: 27%;
   }
   
   #profile-img {
@@ -334,6 +334,10 @@ ul.menu > li > a.design-chs-menu.active {
   }
   
   div.header-text {
+    padding: 0;
+  }
+  
+  div.intro-text {
     padding: 0;
   }
 }
