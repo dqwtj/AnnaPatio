@@ -1,5 +1,6 @@
 <div class="container">
 <%= render "home/menu", :opt => "music" %>
+<div class="row visible-xs">
 <a href="<%= music_path %>" class="back-to-text pull-right" >返回上页</a>
 <% if @album.id == 1 %>
 <div class="album-info-img"></div>
@@ -7,7 +8,8 @@
 <% if @album.id == 2 %>
 <div class="new-info-img"></div>
 <% end %>
-<div class="song-header">
+</div>
+<div class="song-header visible-xs">
 	<a class="left-song pull-left text-hide" href="<%= @left ? album_song_path(@album, @left) : "#" %>">上一首</a>
 	<span class="song-playing" style="display : none">正在播放：</span>
 	<span class="song-title"><%= @song.index %>.&nbsp;&nbsp;<%= @song.name %></span>
@@ -17,6 +19,12 @@
 	<a class="sm2-link" style="display: none" href="<%= @song.url %>"><%= @album.id%>-<%= @song.id %></a>
 	<img src="<%= @song.photo.song %>" class = "img-responsive player-photo" >
 	<div class="play-button"></div>
+</div>
+<div class="song-header hidden-xs">
+	<a class="left-song pull-left text-hide" href="<%= @left ? album_song_path(@album, @left) : "#" %>">上一首</a>
+	<span class="song-playing" style="display : none">正在播放：</span>
+	<span class="song-title"><%= @song.index %>.&nbsp;&nbsp;<%= @song.name %></span>
+	<a class="right-song pull-right text-hide" href="<%= @right ? album_song_path(@album, @right) : "#" %>">下一首</a>
 </div>
 <div class="song-footer">
 	<div class="song-about-img"></div>

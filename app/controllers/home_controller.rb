@@ -5,7 +5,17 @@ class HomeController < ApplicationController
   end
   
   def music
-    @album = Album.first
+    @first = Album.first
+    @lastest = Album.last
+  end
+  
+  def live
+    @first = Album.first
+    @lastest = Album.last
+  end
+  
+  def vedio
+    @first = Album.first
     @lastest = Album.last
   end
   

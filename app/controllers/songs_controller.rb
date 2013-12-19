@@ -17,6 +17,8 @@ class SongsController < ApplicationController
     @song = @album.songs.find(params[:id])
     @left = @album.songs.where(:index.lt => @song.index).last()
     @right = @album.songs.where(:index.gt => @song.index).first()
+    @first = Album.first
+    @lastest = Album.last
   end 
   
   def create

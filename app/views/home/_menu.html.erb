@@ -1,30 +1,58 @@
-<% if opt != "all"%>
-<div class="content">
-	<a id="logo-img" href="/"></a>
-	<a id="chengbi-img" class="pull-right" href="/"></a>
-</div>
-<% end %>
-
-<nav>
+<div class="row">
+	<a id="logo-img" class="col-xs-6 col-sm-2 text-hide <%= 'hidden-xs' if opt == 'all-mini' %>" href="/">Anna Patop</a>
+	<nav class="col-sm-7 hidden-xs center-block">
 	<ul class="menu">
 		<li>
-			<div class="song-en-menu <%= 'active' if ['music', 'all'].include? opt %>"></div>
-			<a href="<%= music_path %>" class="song-chs-menu <%= 'active' if ['music', 'all'].include? opt %>"></a>
+			<div class="song-en-menu <%= 'active' if ['music', 'all', "all-mini"].include? opt %>"></div>
+			<a href="<%= music_path %>" class="song-chs-menu <%= 'active' if ['music', 'all', "all-mini"].include? opt %>"></a>
 		</li>
-		<li class="divider <%= 'active' if ['music', 'poems' , 'all'].include? opt %>"></li>
+		<li class="divider <%= 'active' if ['music', 'poems' , 'all', "all-mini"].include? opt %>"></li>
 		<li>
-			<div class="poem-en-menu <%= 'active' if ['poems', 'all'].include? opt %>"></div>
-			<a href="<%= poems_path %>" class="poem-chs-menu <%= 'active' if ['poems', 'all'].include? opt %>"></a>
+			<div class="poem-en-menu <%= 'active' if ['poems', 'all', "all-mini"].include? opt %>"></div>
+			<a href="<%= poems_path %>" class="poem-chs-menu <%= 'active' if ['poems', 'all', "all-mini"].include? opt %>"></a>
 		</li>
-		<li class="divider <%= 'active' if ['galleries', 'poems' , 'all'].include? opt %>"></li>
+		<li class="divider <%= 'active' if ['galleries', 'poems' , 'all', "all-mini"].include? opt %>"></li>
 		<li>
-			<div class="photo-en-menu <%= 'active' if ['galleries', 'all'].include? opt %>"></div>
-			<a href="<%= galleries_path %>" class="photo-chs-menu <%= 'active' if ['galleries', 'all'].include? opt %>"></a>
+			<div class="photo-en-menu <%= 'active' if ['galleries', 'all', "all-mini"].include? opt %>"></div>
+			<a href="<%= galleries_path %>" class="photo-chs-menu <%= 'active' if ['galleries', 'all', "all-mini"].include? opt %>"></a>
 		</li>
-		<li class="divider <%= 'active' if ['galleries', 'designs' , 'all'].include? opt %>"></li>
+		<li class="divider <%= 'active' if ['galleries', 'designs' , 'all', "all-mini"].include? opt %>"></li>
 		<li>
-			<div class="design-en-menu <%= 'active' if ['designs', 'all'].include? opt %>"></div>
-			<a href="<%= designs_path %>" class="design-chs-menu <%= 'active' if ['designs', 'all'].include? opt %>"></a>
+			<div class="design-en-menu <%= 'active' if ['designs', 'all', "all-mini"].include? opt %>"></div>
+			<a href="<%= designs_path %>" class="design-chs-menu <%= 'active' if ['designs', 'all', "all-mini"].include? opt %>"></a>
+		</li>
+	</ul>
+	</nav>
+	<a id="chengbi-img" class="pull-right col-xs-6 col-sm-3 text-hide <%= 'hidden-xs' if opt == 'all-mini' %>" href="/">chengbi</a>
+</div>
+<nav class="visible-xs">
+	<ul class="menu">
+		<li>
+			<div class="song-en-menu <%= 'active' if ['music', 'all', "all-mini"].include? opt %>"></div>
+			<a href="<%= music_path %>" class="song-chs-menu <%= 'active' if ['music', 'all', "all-mini"].include? opt %>"></a>
+		</li>
+		<li class="divider <%= 'active' if ['music', 'poems' , 'all', "all-mini"].include? opt %>"></li>
+		<li>
+			<div class="poem-en-menu <%= 'active' if ['poems', 'all', "all-mini"].include? opt %>"></div>
+			<a href="<%= poems_path %>" class="poem-chs-menu <%= 'active' if ['poems', 'all', "all-mini"].include? opt %>"></a>
+		</li>
+		<li class="divider <%= 'active' if ['galleries', 'poems' , 'all', "all-mini"].include? opt %>"></li>
+		<li>
+			<div class="photo-en-menu <%= 'active' if ['galleries', 'all', "all-mini"].include? opt %>"></div>
+			<a href="<%= galleries_path %>" class="photo-chs-menu <%= 'active' if ['galleries', 'all', "all-mini"].include? opt %>"></a>
+		</li>
+		<li class="divider <%= 'active' if ['galleries', 'designs' , 'all', "all-mini"].include? opt %>"></li>
+		<li>
+			<div class="design-en-menu <%= 'active' if ['designs', 'all', "all-mini"].include? opt %>"></div>
+			<a href="<%= designs_path %>" class="design-chs-menu <%= 'active' if ['designs', 'all', "all-mini"].include? opt %>"></a>
 		</li>
 	</ul>
 </nav>
+<% if opt == "music"%>
+<div class="row music-index-link hidden-xs">
+	<div class="col-xs-6 col-sm-3"><a href="<%= album_song_path(@lastest, @lastest.songs.first)%>" class="music-new-link"></a></div>
+	<div class="col-xs-6 col-sm-3"><a href="<%= album_song_path(@first, @first.songs.first)%>" class="music-album-link"></a></div>
+	<div class="col-xs-6 col-sm-3"><a href="<%= music_live_path %>" class="music-live-link"></a></div>
+	<div class="col-xs-6 col-sm-3"><a href="<%= music_vedio_path %>" class="music-vedio-link"></a></div>
+</div>
+<% end %>
