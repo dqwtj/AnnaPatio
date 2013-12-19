@@ -269,6 +269,18 @@ ul.menu > li > a.design-chs-menu.active {
     padding-right: 15px;
   }
   
+  div.header-bar {
+    margin-top: 30px;
+  }
+  
+  div.header-text {
+    padding: 5px;
+  }
+  
+  ul.menu {
+    padding-right: 40px;
+  }
+  
   #logo-img {
     margin-top: 20px;
     margin-left: 5px;
@@ -276,27 +288,27 @@ ul.menu > li > a.design-chs-menu.active {
   }
   
   #chengbi-img {
-    margin-top: 30px;
+    margin-top: 35px;
     margin-right: 10px;
   }
   
   div.intro-text {
-    font-size: 11px;
+    font-size: 11.4px;
     font-weight: bold;
     padding: 0 0;
     margin-top: 60px;
     line-height: 1.75;
-    width: 70%;
+    width: 72%;
   }
   
   div.profile-text {
-    font-size: 9.5px;
+    font-size: 9.2px;
     font-weight: bold;
-    padding-left: 0;
+    padding-left: 7px;
     padding-right: 0;
     margin-bottom: 35px;
     line-height: 1.75;
-    width: 30%;
+    width: 28%;
   }
   
   #profile-img {
@@ -307,6 +319,21 @@ ul.menu > li > a.design-chs-menu.active {
     margin: 40px auto 20px;
     color: #AAA;
     text-align: center;
+    font-size: 13px;
   }
     
+}
+
+@media only screen and (min-width: 769px) {
+  #logo-img {
+    margin-left: -15px;
+  }
+  
+  #chengbi-img {
+    margin-right: -10px;
+  }
+  
+  div.header-text {
+    padding: 0;
+  }
 }
