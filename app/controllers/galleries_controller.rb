@@ -11,11 +11,11 @@ class GalleriesController < ApplicationController
   end
   
   def index
-    @galleries = Gallery.galleries.desc(:_id).paginate :page => params[:page], :per_page => 2
+    @galleries = Gallery.galleries.desc(:_id).paginate :page => params[:page], :per_page => 1
   end
   
   def design
-    @designs = Gallery.designs.desc(:_id).paginate :page => params[:page], :per_page => 2
+    @designs = Gallery.designs.desc(:_id).paginate :page => params[:page], :per_page => 1
   end
   
   def create
