@@ -14,6 +14,10 @@ div.song-header > a {
   display: block;
 }
 
+div.music-header {
+  padding: 0 25px;
+}
+
 a.back-to-text {
   color: #000;
   margin: 10px 0;
@@ -199,7 +203,7 @@ div.live-info-img {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
-  margin: 13px 0 15px 15px;
+  margin: 13px 0 15px 0px;
 }
 
 div.vedio-info-img {
@@ -210,7 +214,7 @@ div.vedio-info-img {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
-  margin: 13px 0 17px 10px;
+  margin: 13px 0 17px 0px;
 }
 
 div.new-info-img {
@@ -232,7 +236,7 @@ div.album-info-img {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
-  margin: 13px 0 17px 10px;
+  margin: 13px 0 17px 0px;
 }
 
 ul.live-info-list {
