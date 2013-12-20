@@ -19,4 +19,9 @@ class HomeController < ApplicationController
     @lastest = Album.last
   end
   
+  def about
+    @first = Album.first
+    @lastest = Album.last
+  end
+  
 end
