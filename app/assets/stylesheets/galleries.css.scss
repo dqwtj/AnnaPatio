@@ -29,3 +29,21 @@ div.gallery-text h5 {
 img.gallery-photo {
   margin-top: 2px;
 }
+
+@media only screen and (min-width: 769px) {
+  div.gallery-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  div.gallery-text {
+    font-weight: normal;
+  }
+  
+  div.gallery-text  h5 {
+    font-weight: normal;
+  }
+}

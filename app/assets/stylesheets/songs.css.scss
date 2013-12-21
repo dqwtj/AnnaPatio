@@ -312,7 +312,7 @@ span.left-arrow {
   }
   
   div.music-about-img {
-    margin-top: 15px;
+    margin-top: 35px;
     margin-left: 5px;
   }
   
@@ -352,6 +352,32 @@ span.left-arrow {
   div.music-index-link > div > a {
     margin-left: 25px;
   }
+}
+
+@media only screen and (min-width: 769px) {
+  div.music-about-img {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  div.music-about-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  div.music-about-text div.anna-patio-img {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  div.vedio-info-index {
+    margin: 10px -20px;
+  }
+  
+  div.vedio-info-item {
+    width: 379px;
+  }
+  
 }
 
 @media only screen and (min-width: 1200px) {

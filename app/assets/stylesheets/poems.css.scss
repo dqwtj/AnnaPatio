@@ -176,3 +176,17 @@ ul.pagination > li.next.next_page > a {
     padding: 0 220px;
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  ul.poem-index-title > li > a {
+    font-weight: normal;
+  }
+  
+  div.poem-content {
+    font-weight: normal;
+  }
+  
+  h4.poem-title {
+    font-weight: normal;
+  }
+}

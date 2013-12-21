@@ -293,7 +293,7 @@ ul.menu > li > a.design-chs-menu.active {
   }
   
   div.intro-text {
-    font-size: 11.6px;
+    font-size: 12px;
     font-weight: bold;
     padding: 0 0 0 7px;
     margin-top: 48px;
@@ -326,11 +326,11 @@ ul.menu > li > a.design-chs-menu.active {
 
 @media only screen and (min-width: 769px) {
   #logo-img {
-    margin-left: -15px;
+    margin-left: 0px;
   }
   
   #chengbi-img {
-    margin-right: -10px;
+    margin-right: 0px;
   }
   
   div.header-text {
@@ -339,5 +339,20 @@ ul.menu > li > a.design-chs-menu.active {
   
   div.intro-text {
     padding: 0;
+  }
+  
+  div.row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  div.intro-text {
+    font-weight: normal;
+  }
+  
+  div.profile-text {
+    font-weight: normal;
   }
 }
