@@ -1,5 +1,5 @@
 <div class="container">
-<%= render "home/menu", :opt => "music", :song => @album.id == 1 ? "new" : "annapatio" %>
+<%= render "home/menu", :opt => "music", :song => @album.id == 2 ? "new" : "annapatio" %>
 <div class="row music-header visible-xs">
 <a href="<%= song_path %>" class="back-to-text pull-right" >返回上页</a>
 <% if @album.id == 1 %>
