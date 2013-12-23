@@ -132,7 +132,7 @@ div.music-index-link {
 }
 
 a.music-new-link {
-  background-image: image-url('music-new.png');
+  background-image: image-url('music-new-grey.png');
   background-size: 80px 37px;
   height: 37px;
   width: 80px;
@@ -142,8 +142,12 @@ a.music-new-link {
   margin-bottom: 15px;
 }
 
+a.music-new-link.active {
+  background-image: image-url('music-new.png');
+}
+
 a.music-album-link {
-  background-image: image-url('music-album.png');
+  background-image: image-url('music-album-grey.png');
   background-size: 95px 37px;
   height: 37px;
   width: 95px;
@@ -153,8 +157,12 @@ a.music-album-link {
   margin-bottom: 15px;
 }
 
+a.music-album-link.active {
+  background-image: image-url('music-album.png');
+}
+
 a.music-live-link {
-  background-image: image-url('music-live.png');
+  background-image: image-url('music-live-grey.png');
   background-size: 80px 37px;
   height: 37px;
   width: 80px;
@@ -163,14 +171,22 @@ a.music-live-link {
   display: block;
 }
 
+a.music-live-link.active {
+  background-image: image-url('music-live.png');
+}
+
 a.music-video-link {
-  background-image: image-url('music-video.png');
+  background-image: image-url('music-video-grey.png');
   background-size: 80px 37px;
   height: 37px;
   width: 80px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
+}
+
+a.music-video-link.active {
+  background-image: image-url('music-video.png');
 }
 
 div.music-about-img {
