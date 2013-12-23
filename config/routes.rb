@@ -11,19 +11,19 @@ AnnaPatio::Application.routes.draw do
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
-  resources :poems
-  resources :galleries do
+  resources :poems, path: 'poem'
+  resources :galleries, path: 'photo' do
     resources :photos, :only => [:index, :create, :update, :destroy]
   end
   resources :albums do
     resources :songs
   end
   get 'songs/:song_id/photo' => 'photos#index', as: 'song_photo'
-  get 'music' => 'home#music'
-  get 'music/live' => 'home#live'
-  get 'music/about' => 'home#about'
-  get 'designs' => 'galleries#design'
-  get 'music/vedio' => 'home#vedio'
+  get 'song' => 'home#music'
+  get 'song/live' => 'home#live'
+  get 'song/about' => 'home#about'
+  get 'design' => 'galleries#design'
+  get 'song/video' => 'home#video'
 
   # Example resource route with options:
   #   resources :products do

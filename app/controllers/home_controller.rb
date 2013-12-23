@@ -14,7 +14,7 @@ class HomeController < ApplicationController
     @lastest = Album.last
   end
   
-  def vedio
+  def video
     @first = Album.first
     @lastest = Album.last
   end
