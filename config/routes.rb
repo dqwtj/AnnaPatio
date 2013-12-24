@@ -24,6 +24,8 @@ AnnaPatio::Application.routes.draw do
   get 'song/about' => 'home#about'
   get 'design' => 'galleries#design'
   get 'song/video' => 'home#video'
+  
+  resource :weixin
 
   # Example resource route with options:
   #   resources :products do

@@ -1,0 +1,16 @@
+<xml>
+	<ToUserName><![CDATA[<%= params[:xml][:FromUserName] %>]]></ToUserName>
+    <FromUserName><![CDATA[<%= params[:xml][:ToUserName] %>]]></FromUserName>
+    <CreateTime><%= Time.now.to_i %></CreateTime>
+	<MsgType><![CDATA[news]]></MsgType>
+	<ArticleCount>1</ArticleCount>
+ 	<Articles>
+		<item>
+			<Title><![CDATA[欢迎来到程璧的个人作品花园]]></Title> 
+			<PicUrl><![CDATA[http://mmbiz.qpic.cn/mmbiz/ictglJqEnnqSntic48ic81iaC35RafhfVpOBMA5P951icaPJN7tic6XU6b09PdCLuXUQX3ichesicvjDD2iaEiaOUqDNLXkA/0]]></PicUrl>
+			<Description><![CDATA[你看到的我，是在走过很多风景后，发现最美的是平常。懂得人生终将告别后，用一期一会去遇见。所以你觉得明亮温暖，那是我的方式来对待这个世界。]]></Description>
+			<Url><![CDATA[http://annapatio.com]]></Url>
+		</item>
+	</Articles>
+	<FuncFlag>0</FuncFlag>
+</xml>
