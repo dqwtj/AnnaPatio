@@ -26,6 +26,6 @@ module AnnaPatio
     config.i18n.default_locale = "zh-CN"
     
     # 微信 API token
-    config.weixin_token = "o2music"
+    config.weixin_token = "sumersmile"
   end
 end
