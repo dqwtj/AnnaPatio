@@ -1,19 +1,13 @@
 # -*- encoding : utf-8 -*-
 class WeixinsController < ApplicationController
   skip_before_filter :verify_authenticity_token
-  before_filter :check_weixin_legality
+  #before_filter :check_weixin_legality
 
   def show
     render :text => params[:echostr]
   end
 
   def create
-    if params[:xml][:MsgType] == "text"
-      case params[:xml][:Content]
-      when "听"
-        render "ting", :formats => :xml
-      end
-    end
     if (params[:xml][:MsgType] == "event") && (params[:xml][:Event] == "subscribe")
       render "welcome", :formats => :xml
     end

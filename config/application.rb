@@ -27,5 +27,7 @@ module AnnaPatio
     
     # 微信 API token
     config.weixin_token = "sumersmile"
+    
+    config.middleware.insert_after ActionDispatch::ParamsParser, ActionDispatch::XmlParamsParser
   end
 end
