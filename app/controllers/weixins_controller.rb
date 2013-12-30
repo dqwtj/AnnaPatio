@@ -8,6 +8,12 @@ class WeixinsController < ApplicationController
   end
 
   def create
+    if params[:xml][:MsgType] == "text"
+      case params[:xml][:Content]
+      when "我的内心是满的"
+        render "poem", :formats => :xml
+      end
+    end
     if (params[:xml][:MsgType] == "event") && (params[:xml][:Event] == "subscribe")
       render "welcome", :formats => :xml
     end
