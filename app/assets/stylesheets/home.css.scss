@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+html {
+  overflow-x:auto; 
+  overflow-y:scroll;
+}
+
 div.content {
   line-height: 1.8;
   margin: 15px auto;
