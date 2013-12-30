@@ -9,8 +9,7 @@ class WeixinsController < ApplicationController
 
   def create
     if params[:xml][:MsgType] == "text"
-      case params[:xml][:Content]
-      when "我的内心是满的"
+      if params[:xml][:Content] == "我的内心是满的"
         render "poem", :formats => :xml
       end
     end
