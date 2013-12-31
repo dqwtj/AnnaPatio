@@ -26,7 +26,7 @@ class SongsController < ApplicationController
     @song = @album.songs.new(song_params)
     
     if @song.save
-      redirect_to music_path, :notice => "《#{@song.name}》创建成功"
+      redirect_to song_path, :notice => "《#{@song.name}》创建成功"
     else
       render :new
     end
@@ -36,7 +36,7 @@ class SongsController < ApplicationController
     @song = Song.find(params[:id])
     
     if @song.update_attributes(song_params)
-      redirect_to music_path, :notice => '《#{@song.name}》修改成功'
+      redirect_to song_path, :notice => '《#{@song.name}》修改成功'
     else
       render :edit
     end
