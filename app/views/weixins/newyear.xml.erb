@@ -1,0 +1,16 @@
+<xml>
+	<ToUserName><![CDATA[<%= params[:xml][:FromUserName] %>]]></ToUserName>
+    <FromUserName><![CDATA[<%= params[:xml][:ToUserName] %>]]></FromUserName>
+    <CreateTime><%= Time.now.to_i %></CreateTime>
+	<MsgType><![CDATA[news]]></MsgType>
+	<ArticleCount>1</ArticleCount>
+ 	<Articles>
+		<item>
+			<Title><![CDATA[我的家门口（Demo）]]></Title> 
+			<PicUrl><![CDATA[http://mmbiz.qpic.cn/mmbiz/ictglJqEnnqQOPfBTseonJ9ySleU9AuUqR6DuYkiaChLCg5ph2kkxWibXCicx5PWgZKv5QGId6FHhYJLbQAkybhdoQ/0]]></PicUrl>
+			<Description><![CDATA[大家好，我是程璧，欢迎来到小花园的各位，感谢你们在2013年对我的支持和喜欢，在这里想分享一首新歌Demo给大家，愿在2014年的第一天，给你们带来一份温暖和明亮，祝大家新年好！]]></Description>
+			<Url><![CDATA[http://annapatio.com/albums/2/songs/11]]></Url>
+		</item>
+	</Articles>
+	<FuncFlag>0</FuncFlag>
+</xml>
