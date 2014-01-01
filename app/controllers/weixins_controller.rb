@@ -12,7 +12,7 @@ class WeixinsController < ApplicationController
       if params[:xml][:Content] == "我的内心是满的"
         render "poem", :formats => :xml
       end
-      if params[:xml][:Content] == "新年好"
+      if params[:xml][:Content] =~ /[新][年][好]/
         render "newyear", :formats => :xml
       end
     end
