@@ -17,7 +17,7 @@ class WeixinsController < ApplicationController
       end
       @song = Song.where(:name => params[:xml][:Content]).first
       if @song
-        render "song", :formats => xml
+        render "song", :formats => :xml
       end
     end
     if (params[:xml][:MsgType] == "event") && (params[:xml][:Event] == "subscribe")
