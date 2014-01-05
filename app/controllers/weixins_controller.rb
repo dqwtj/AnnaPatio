@@ -15,6 +15,10 @@ class WeixinsController < ApplicationController
       if params[:xml][:Content] =~ /[新][年][好]/
         render "newyear", :formats => :xml
       end
+      @song = Song.where(:name => params[:xml][:Content]).first
+      if @song
+        render "song", :formats => xml
+      end
     end
     if (params[:xml][:MsgType] == "event") && (params[:xml][:Event] == "subscribe")
       render "welcome", :formats => :xml

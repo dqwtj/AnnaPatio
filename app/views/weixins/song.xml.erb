@@ -1,0 +1,13 @@
+<xml>
+    <ToUserName><![CDATA[<%= params[:xml][:FromUserName] %>]]></ToUserName>
+    <FromUserName><![CDATA[<%= params[:xml][:ToUserName] %>]]></FromUserName>
+    <CreateTime><%= Time.now.to_i %></CreateTime>
+    <MsgType><![CDATA[music]]></MsgType>
+ 	<Music>
+ 		<Title><![CDATA[<%= song.name %>]]></Title>
+ 		<Description><![CDATA[程璧]]></Description>
+ 		<MusicUrl><![CDATA[<%= song.url %>]]></MusicUrl>
+ 		<HQMusicUrl><![CDATA[<%= song.url %>]]></HQMusicUrl>
+ 	</Music>
+    <FuncFlag>0</FuncFlag>
+</xml>
