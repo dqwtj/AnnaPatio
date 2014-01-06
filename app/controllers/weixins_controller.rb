@@ -16,7 +16,7 @@ class WeixinsController < ApplicationController
       if @song
         render "song", :formats => :xml
       end
-      @poem = Poem.where(:name => params[:xml][:Content]).first
+      @poem = Poem.where(:title => params[:xml][:Content]).first
       if @poem && @poem.url
         render "poem", :formats => :xml
       end
