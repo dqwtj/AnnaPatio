@@ -9,15 +9,16 @@ class WeixinsController < ApplicationController
 
   def create
     if params[:xml][:MsgType] == "text"
-      if params[:xml][:Content] == "我的内心是满的"
-        render "poem", :formats => :xml
-      end
       if params[:xml][:Content] =~ /[新][年][好]/
         render "newyear", :formats => :xml
       end
       @song = Song.where(:name => params[:xml][:Content]).first
       if @song
         render "song", :formats => :xml
+      end
+      @poem = Poem..where(:name => params[:xml][:Content]).first
+      if @poem && @poem.url
+        render "poem", :formats => :xml
       end
     end
     if (params[:xml][:MsgType] == "event") && (params[:xml][:Event] == "subscribe")
