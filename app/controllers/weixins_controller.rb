@@ -17,9 +17,10 @@ class WeixinsController < ApplicationController
         render "song", :formats => :xml
       end
       @poem = Poem.where(:title => params[:xml][:Content]).first
-      if @poem && @poem.url
-        render "poem", :formats => :xml
+      if @poem
+        render "poem", :formats => :xml if @poem.url
       end
+      render :text => "Unknown", :status => 403
     end
     if (params[:xml][:MsgType] == "event") && (params[:xml][:Event] == "subscribe")
       render "welcome", :formats => :xml
