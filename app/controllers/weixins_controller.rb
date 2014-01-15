@@ -15,12 +15,13 @@ class WeixinsController < ApplicationController
         @song = Song.where(:name => params[:xml][:Content]).first
         if @song
           render "song", :formats => :xml
-        end
-        @poem = Poem.where(:title => params[:xml][:Content]).first
-        if @poem
-          render "poem", :formats => :xml if @poem.url
         else
-          render :text => "Unknown", :status => 403
+          @poem = Poem.where(:title => params[:xml][:Content]).first
+          if @poem
+            render "poem", :formats => :xml if @poem.url
+          else
+            render :text => "Unknown", :status => 403
+          end
         end
       end
     end
