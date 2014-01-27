@@ -1,0 +1,10 @@
+<div class="container">
+<%= render "home/menu", :opt => "galleries" %>
+<div class="row"><div class="poem-index-img"></div></div>
+<ul class="poem-index-title">
+	<% @galleries.each do |gallery| %>
+	<li><%= link_to gallery.title, edit_gallery_path(gallery) %></li>
+	<% end %>
+</ul>
+<%= will_paginate @galleries, :inner_window => 2 %>
+</div>

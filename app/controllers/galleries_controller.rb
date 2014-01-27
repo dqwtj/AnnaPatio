@@ -16,6 +16,10 @@ class GalleriesController < ApplicationController
     @galleries = Gallery.galleries.desc(:_id).paginate :page => params[:page], :per_page => 1
   end
   
+  def list
+    @galleries = Gallery.galleries.desc(:_id).paginate :page => params[:page], :per_page => 10
+  end
+  
   def design
     @designs = Gallery.designs.desc(:_id).paginate :page => params[:page], :per_page => 1
   end

@@ -14,6 +14,9 @@ AnnaPatio::Application.routes.draw do
   resources :poems, path: 'poem'
   resources :galleries, path: 'photo' do
     resources :photos, :only => [:index, :create, :update, :destroy]
+    collection do
+      get "list"
+    end
   end
   resources :albums do
     resources :songs
