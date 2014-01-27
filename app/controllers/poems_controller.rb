@@ -1,5 +1,7 @@
 class PoemsController < ApplicationController
   
+  http_basic_authenticate_with name: "anna", password: "summer", except: [:index, :show]
+  
   def new
     @poem = Poem.new
   end

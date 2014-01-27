@@ -1,5 +1,7 @@
 class SongsController < ApplicationController
   
+  http_basic_authenticate_with name: "anna", password: "summer", except: [:show]
+  
   def new
     @album = Album.find params[:album_id]
     @song = @album.songs.new    

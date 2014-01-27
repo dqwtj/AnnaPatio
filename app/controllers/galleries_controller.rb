@@ -1,5 +1,7 @@
 class GalleriesController < ApplicationController
   
+  http_basic_authenticate_with name: "anna", password: "summer", except: [:index, :show, :design]
+  
   def new
     @gallery = Gallery.new    
   end

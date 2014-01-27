@@ -1,5 +1,7 @@
 class AlbumsController < ApplicationController
   
+  http_basic_authenticate_with name: "anna", password: "summer", except: [:index]
+  
   def new
     @album = Album.new    
   end
