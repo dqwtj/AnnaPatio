@@ -9,7 +9,8 @@ a.return-to-index {
 
 div.poem-index-img {
   background-image: image-url('poem-index.png');
-  background-size: 51px 14px;
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
   height: 14px;
   width: 51px;
   background-position: 50% 50%;
@@ -136,7 +137,8 @@ ul.pagination > li.prev.previous_page {
 
 ul.pagination > li.prev.previous_page > a {
   background-image: image-url('left-song.png');
-  background-size: 16px 10px;
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
   height: 10px;
   width: 16px;
   background-position: 50% 50%;
@@ -153,7 +155,8 @@ ul.pagination > li.next.next_page {
 
 ul.pagination > li.next.next_page > a {
   background-image: image-url('right-song.png');
-  background-size: 16px 10px;
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
   height: 10px;
   width: 16px;
   background-position: 50% 50%;

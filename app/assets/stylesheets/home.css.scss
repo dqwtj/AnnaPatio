@@ -44,18 +44,19 @@ div.footer {
 
 div.footer-img {
   background-image: image-url('home-banner.png');
-  background-size: 181px 43px;
+  background-size: cover;
   height: 43px;
   width: 181px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
   margin: 38px auto;
+  -ms-behavior: url(/backgroundsize.min.htc);
 }
 
 a.go-top-img {
   background-image: image-url('go-top.png');
-  background-size: 48px 10px;
+  background-size: cover;
   height: 10px;
   width: 48px;
   background-position: 50% 50%;
@@ -64,6 +65,7 @@ a.go-top-img {
   margin-top: 17px;
   margin-right: 2px;
   margin-bottom: 15px;
+  -ms-behavior: url(/backgroundsize.min.htc);
 }
 
 ul.menu {
@@ -104,12 +106,13 @@ ul.menu > li > div {
 
 ul.menu > li > div.song-en-menu {
   background-image: image-url('song-en-menu-disable.png');
-  background-size: 26px 6px;
+  background-size: cover;
   height: 6px;
   width: 26px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
+  -ms-behavior: url(/backgroundsize.min.htc);
 }
 
 ul.menu > li > div.song-en-menu.active {
@@ -118,12 +121,13 @@ ul.menu > li > div.song-en-menu.active {
 
 ul.menu > li > a.song-chs-menu {
   background-image: image-url('song-chs-menu-disable.png');
-  background-size: 15px 15px;
+  background-size: cover;
   height: 15px;
   width: 15px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
+  -ms-behavior: url(/backgroundsize.min.htc);
 }
 
 ul.menu > li > a.song-chs-menu.active {
@@ -132,12 +136,13 @@ ul.menu > li > a.song-chs-menu.active {
 
 ul.menu > li > div.poem-en-menu {
   background-image: image-url('poem-en-menu-disable.png');
-  background-size: 70px 6px;
+  background-size: cover;
   height: 6px;
   width: 70px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
+  -ms-behavior: url(/backgroundsize.min.htc);
 }
 
 ul.menu > li > div.poem-en-menu.active {
@@ -146,12 +151,13 @@ ul.menu > li > div.poem-en-menu.active {
 
 ul.menu > li > a.poem-chs-menu {
   background-image: image-url('poem-chs-menu-disable.png');
-  background-size: 60px 14px;
+  background-size: cover;
   height: 14px;
   width: 60px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
+  -ms-behavior: url(/backgroundsize.min.htc);
 }
 
 ul.menu > li > a.poem-chs-menu.active {
@@ -160,12 +166,13 @@ ul.menu > li > a.poem-chs-menu.active {
 
 ul.menu > li > div.photo-en-menu {
   background-image: image-url('photo-en-menu-disable.png');
-  background-size: 32px 6px;
+  background-size: cover;
   height: 6px;
   width: 32px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
+  -ms-behavior: url(/backgroundsize.min.htc);
 }
 
 ul.menu > li > div.photo-en-menu.active {
@@ -174,12 +181,13 @@ ul.menu > li > div.photo-en-menu.active {
 
 ul.menu > li > a.photo-chs-menu {
   background-image: image-url('photo-chs-menu-disable.png');
-  background-size: 30px 14px;
+  background-size: cover;
   height: 14px;
   width: 30px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
+  -ms-behavior: url(/backgroundsize.min.htc);
 }
 
 ul.menu > li > a.photo-chs-menu.active {
@@ -188,12 +196,13 @@ ul.menu > li > a.photo-chs-menu.active {
 
 ul.menu > li > div.design-en-menu {
   background-image: image-url('design-en-menu-disable.png');
-  background-size: 36px 6px;
+  background-size: cover;
   height: 6px;
   width: 36px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
+  -ms-behavior: url(/backgroundsize.min.htc);
 }
 
 ul.menu > li > div.design-en-menu.active {
@@ -208,6 +217,7 @@ ul.menu > li > a.design-chs-menu {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
+  -ms-behavior: url(/backgroundsize.min.htc);
 }
 
 ul.menu > li > a.design-chs-menu.active {
@@ -225,11 +235,12 @@ ul.menu > li > a.design-chs-menu.active {
   display: inline-block;
   margin-left: 25px;
   margin-top: 10px;
+  -ms-behavior: url(/backgroundsize.min.htc);
 }
 
 #chengbi-img {
   background-image: image-url('chengbi.png');
-  background-size: 42px 17px;
+  background-size: cover;
   height: 17px;
   width: 42px;
   background-position: 50% 50%;
@@ -238,11 +249,12 @@ ul.menu > li > a.design-chs-menu.active {
   margin-right: 30px;
   margin-bottom: 15px;
   margin-top: 20px;
+  -ms-behavior: url(/backgroundsize.min.htc);
 }
 
 #profile-img {
   background-image: image-url('profile.png');
-  background-size: 40px 12px;
+  background-size: cover;
   height: 12px;
   width: 40px;
   background-position: 50% 50%;
@@ -251,16 +263,18 @@ ul.menu > li > a.design-chs-menu.active {
   margin-left: 0;
   margin-bottom: 10px;
   margin-top: -10px;
+  -ms-behavior: url(/backgroundsize.min.htc);
 }
 
 #anna-1-img {
   background-image: image-url('anna-1.png');
-  background-size: 320px 212px;
+  background-size: cover;
   height: 212px;
   width: 320px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
+  -ms-behavior: url(/backgroundsize.min.htc);
 }
 
 @media only screen and (min-width: 767px) {

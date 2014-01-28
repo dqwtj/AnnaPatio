@@ -32,14 +32,16 @@ a.read-more-text {
 
 a.left-song {
   background-image: image-url('left-song.png');
-  background-size: 16px 10px;
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
   height: 10px;
   width: 16px;
 }
 
 a.right-song {
   background-image: image-url('right-song.png');
-  background-size: 16px 10px;
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
   height: 10px;
   width: 16px;
   
@@ -57,7 +59,8 @@ div.song-about-text {
 
 div.song-about-img {
   background-image: image-url('song-about.png');
-  background-size: 75px 15px;
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
   height: 15px;
   width: 74px;
   background-position: 50% 50%;
@@ -69,7 +72,8 @@ div.song-about-img {
 
 div.song-lyrics-img {
   background-image: image-url('song-lyrics.png');
-  background-size: 30px 15px;
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
   height: 15px;
   width: 30px;
   background-position: 50% 50%;
@@ -105,21 +109,24 @@ div.sm2-panel div.play-button {
   width: 60px;
   height: 60px;
   background: image-url("play-button.png") no-repeat;
-  background-size: 60px 60px;
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
 }
 
 div.sm2-playing div.play-button {
   width: 60px;
   height: 60px;
   background: image-url("pause-button.png") no-repeat;
-  background-size: 60px 60px;
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
 }
 
 div.sm2-paused div.play-button {
   width: 60px;
   height: 60px;
   background: image-url("play-button.png") no-repeat;
-  background-size: 60px 60px;
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
 }
 
 
@@ -133,7 +140,8 @@ div.music-index-link {
 
 a.music-new-link {
   background-image: image-url('music-new-grey.png');
-  background-size: 80px 37px;
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
   height: 37px;
   width: 80px;
   background-position: 50% 50%;
@@ -148,7 +156,8 @@ a.music-new-link.active {
 
 a.music-album-link {
   background-image: image-url('music-album-grey.png');
-  background-size: 95px 37px;
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
   height: 37px;
   width: 95px;
   background-position: 50% 50%;
@@ -163,7 +172,8 @@ a.music-album-link.active {
 
 a.music-live-link {
   background-image: image-url('music-live-grey.png');
-  background-size: 80px 37px;
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
   height: 37px;
   width: 80px;
   background-position: 50% 50%;
@@ -177,7 +187,8 @@ a.music-live-link.active {
 
 a.music-video-link {
   background-image: image-url('music-video-grey.png');
-  background-size: 80px 37px;
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
   height: 37px;
   width: 80px;
   background-position: 50% 50%;
@@ -191,7 +202,8 @@ a.music-video-link.active {
 
 div.music-about-img {
   background-image: image-url('music-about.png');
-  background-size: 113px 15px;
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
   height: 15px;
   width: 113px;
   background-position: 50% 50%;
@@ -213,7 +225,8 @@ div.music-about-text div.anna-patio-img {
 
 div.live-info-img {
   background-image: image-url('live-info.png');
-  background-size: 90px 15px;
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
   height: 15px;
   width: 90px;
   background-position: 50% 50%;
@@ -224,7 +237,8 @@ div.live-info-img {
 
 div.video-info-img {
   background-image: image-url('video-info.png');
-  background-size: 60px 14px;
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
   height: 14px;
   width: 60px;
   background-position: 50% 50%;
@@ -235,7 +249,8 @@ div.video-info-img {
 
 div.new-info-img {
   background-image: image-url('new-info.png');
-  background-size: 59px 14px;
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
   height: 14px;
   width: 59px;
   background-position: 50% 50%;
@@ -246,7 +261,8 @@ div.new-info-img {
 
 div.album-info-img {
   background-image: image-url('album-info.png');
-  background-size: 113px 14px;
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
   height: 14px;
   width: 113px;
   background-position: 50% 50%;
@@ -298,7 +314,8 @@ div.video-info-image {
 
 span.left-arrow {
   background-image: image-url('left-arrow.png');
-  background-size: 6px 9px;
+  background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
   height: 9px;
   width: 6px;
   background-position: 50% 50%;
