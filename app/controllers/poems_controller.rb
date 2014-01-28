@@ -16,8 +16,8 @@ class PoemsController < ApplicationController
   
   def show
     @poem = Poem.find(params[:id])
-    @poemLeft = Poem.where(:_id.lt => params[:id]).last();
-    @poemRight = Poem.where(:_id.gt => params[:id]).first();
+    @poemLeft = Poem.where(:created_at.gt => @poem.created_at).first();
+    @poemRight = Poem.where(:created_at.lt => @poem.created_at).last();
   end
   
   def create
