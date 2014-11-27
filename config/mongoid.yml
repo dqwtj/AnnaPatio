@@ -7,8 +7,8 @@ development:
   sessions:
     default:
       hosts:
-        - 127.0.0.1:27017
-      database: anna_patio_development
+        - yuelink.com:27017
+      database: anna_patio
 
 test:
   <<: *defaults
