@@ -50,7 +50,7 @@
 </nav>
 <% if opt == "music"%>
 <div class="row music-index-link hidden-xs">
-	<div class="col-xs-6 col-sm-3"><a href="<%= album_song_path(@lastest, @lastest.songs.first)%>" class="music-new-link <%= 'active' if ['new', 'all'].include? song %>"></a></div>
+	<div class="col-xs-6 col-sm-3"><a href="<%= album_song_path(@lastest, @lastest.songs.last)%>" class="music-new-link <%= 'active' if ['new', 'all'].include? song %>"></a></div>
 	<div class="col-xs-6 col-sm-3"><a href="<%= album_song_path(@first, @first.songs.first)%>" class="music-album-link <%= 'active' if ['annapatio', 'all'].include? song %>"></a></div>
 	<div class="col-xs-6 col-sm-3"><a href="<%= song_live_path %>" class="music-live-link <%= 'active' if ['live', 'all'].include? song %>"></a></div>
 	<div class="col-xs-6 col-sm-3"><a href="<%= song_video_path %>" class="music-video-link <%= 'active' if ['video', 'all'].include? song %>"></a></div>
