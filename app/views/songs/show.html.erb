@@ -1,5 +1,13 @@
 <div class="container">
-<%= render "home/menu", :opt => "music", :song => @album.id == 2 ? "new" : "annapatio" %>
+<% if @album.id == 1 %>
+<%= render "home/menu", :opt => "music", :song => "annapatio" %>
+<% end %>
+<% if @album.id == 2 %>
+<%= render "home/menu", :opt => "music", :song => "new" %>
+<% end %>
+<% if @album.id == 3 %>
+<%= render "home/menu", :opt => "music", :song => "live" %>
+<% end %>
 <div class="row music-header visible-xs">
 <a href="<%= song_path %>" class="back-to-text pull-right" >返回上页</a>
 <% if @album.id == 1 %>
@@ -7,6 +15,9 @@
 <% end %>
 <% if @album.id == 2 %>
 <div class="new-info-img"></div>
+<% end %>
+<% if @album.id == 3 %>
+<div class="live-info-img"></div>
 <% end %>
 </div>
 <div class="song-header visible-xs">
